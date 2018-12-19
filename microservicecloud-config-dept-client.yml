@@ -21,7 +21,11 @@ spring:
         initial-size: 5
         max-total: 5
         max-wait-millis: 200
-
+        
+mybatis:
+  type-aliases-package: com.atguigu.springcloud.entities
+  mapper-locations: mapper/**/*.xml
+  
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
@@ -54,7 +58,11 @@ spring:
         initial-size: 5
         max-total: 5
         max-wait-millis: 200
-
+        
+mybatis:
+  type-aliases-package: com.atguigu.springcloud.entities
+  mapper-locations: mapper/**/*.xml
+  
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
